@@ -1,0 +1,16 @@
+@import url(-about.css);
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  box-sizing: border-box;
+  min-height: 100vh;
+  margin: 0;
+  display: block;
+  font-family: "Raleway", sans-serif;
+  background-color: #abb0b5;
+}

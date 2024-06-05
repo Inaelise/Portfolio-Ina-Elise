@@ -1,0 +1,36 @@
+.img-background {
+  width: 290px;
+  height: 290px;
+  background-color: #b6aad7;
+  position: absolute;
+  z-index: -1;
+  right: -20px;
+}
+
+.about img,
+.img-background {
+  border-radius: 100% 65% 100% 37% / 69% 100% 56% 27%;
+}
+
+.img-container {
+  position: relative;
+}
+
+.about img {
+  width: 250px;
+  object-fit: cover;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-content {
+  background-color: #b6aad7;
+  width: 300px;
+  padding: 1rem;
+}
