@@ -18,21 +18,46 @@
       src="https://kit.fontawesome.com/92238a2726.js"
       crossorigin="anonymous"
     ></script>
+    <script type="module" src=""></script>
     <link rel="stylesheet" href="./css/index.css" />
     <title>Ina Elise Flom</title>
   </head>
   <body>
     <header>
       <nav>
-        <ul>
-          <li><a href="" title="Go to about section">about</a></li>
-          <li><a href="" title="Go to projects">projects</a></li>
-          <li><a href="" title="Go to contact section">contact</a></li>
+        <ul class="nav-list">
+          <li>
+            <a
+              class="nav-links"
+              href="#about"
+              data-section="about"
+              title="Go to about section"
+              >about</a
+            >
+          </li>
+          <li>
+            <a
+              class="nav-links"
+              href="#projects"
+              data-section="projects"
+              title="Go to projects"
+              >projects</a
+            >
+          </li>
+          <li>
+            <a
+              class="nav-links"
+              href="#contact"
+              data-section="contact"
+              title="Go to contact section"
+              >contact</a
+            >
+          </li>
         </ul>
       </nav>
     </header>
     <main>
-      <section class="about">
+      <section id="about">
         <span class="background">ina elise</span>
         <div class="about-container">
           <div class="img-container">
@@ -56,14 +81,102 @@
               Skills I have learned so far: HTML, CSS, Tailwind CSS &
               JavaScript.
             </p>
-            <button title="Click to read more">read more</button>
+            <a class="more-btn" title="Click to read more">read more</a>
           </div>
         </div>
-        <i class="fa-solid fa-chevron-down"></i>
+        <i class="fa-solid fa-chevron-down chevron"></i>
       </section>
-      <section class="project"></section>
-      <section class="contact"></section>
+      <section id="project">
+        <h1>Projects</h1>
+        <div class="card-container">
+          <a
+            href="https://norofffeu.github.io/html-css-course-assignment-Inaelise/"
+            title="Click to go to project page"
+          >
+            <article>
+              <img src="./images/rainydays.webp" alt="screenshot of website" />
+              <div>
+                <h2>rainy days</h2>
+                <p>
+                  Rainy Days was my first assignment for the HTML & CSS course.
+                  This website is only made with HTML and CSS.
+                </p>
+                <p>
+                  For the assignment we could choose between three briefs and I
+                  chose Rainy Days, a jacket company.
+                </p>
+              </div>
+            </article>
+          </a>
+          <a
+            href="https://inaelise.github.io/Semester-project-1/"
+            title="Click to go to project page"
+          >
+            <article>
+              <img
+                src="./images/Bergen-science-museum.webp"
+                alt="screenshot of website"
+              />
+              <div>
+                <h2>bergen science museum</h2>
+                <p>
+                  Bergen Science Museum was made as my contribution to my first
+                  semester project.
+                </p>
+                <p>
+                  This was a HTML and CSS only project. No frameworks or
+                  JavaScript was allowed.
+                </p>
+                <p>
+                  We were told to make a website for a science museum that were
+                  to appeal to a younger audience without making it look
+                  “childish”.
+                </p>
+              </div>
+            </article>
+          </a>
+          <a
+            href="https://norofffeu.github.io/FED1-PE1-Inaelise/"
+            title="Click to go to project page"
+          >
+            <article>
+              <img
+                src="./images/Hotview-labs.webp"
+                alt="screenshot of website"
+              />
+              <div>
+                <h2>hotview labs</h2>
+                <p>
+                  This website was my contribution to my first project exam.
+                </p>
+                <p>
+                  We had to put everything we had learned from the past year
+                  into this project. It's made with HTML, CSS and JavaScript. We
+                  could not use frameworks.
+                </p>
+                <p>
+                  We were asked to make a front-end user interface for an
+                  existing API blogging application.
+                </p>
+              </div>
+            </article>
+          </a>
+        </div>
+        <i class="fa-solid fa-chevron-down chevron"></i>
+      </section>
+      <section id="contact">
+        <h1>Contact</h1>
+        <a
+          href="https://www.linkedin.com/in/ina-elise-flom-b55433311/"
+          title="Click to go to my LinkedIn page"
+          >My LinkedIn</a
+        >
+      </section>
     </main>
-    <footer></footer>
+    <footer>
+      <p>2024</p>
+      <p>©</p>
+      <p>Ina Elise Flom</p>
+    </footer>
   </body>
 </html>
