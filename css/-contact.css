@@ -1,0 +1,21 @@
+#contact {
+  margin-top: 4rem;
+  margin-bottom: 6rem;
+  text-align: center;
+}
+
+#contact h1 {
+  color: white;
+  font-weight: 500;
+  margin-bottom: 4rem;
+}
+
+#contact a {
+  color: #b6aad7;
+  background-color: #443f53;
+  text-decoration: none;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.163);
+  padding: 1rem 1.5rem;
+  border-radius: 50px;
+  font-weight: 900;
+}

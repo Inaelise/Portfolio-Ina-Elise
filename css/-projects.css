@@ -1,0 +1,43 @@
+#project img {
+  width: 100%;
+  object-fit: cover;
+}
+
+#project a {
+  text-decoration: none;
+  color: black;
+}
+
+#project h1 {
+  color: white;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: center;
+}
+
+#project img,
+.card-container a {
+  border-radius: 5px;
+}
+
+.card-container a {
+  width: 300px;
+  background-color: #b6aad7;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.163);
+}
+
+article div {
+  padding: 0 0.5rem;
+}
+
+.card-container h2 {
+  margin-top: 0.5rem;
+  text-transform: capitalize;
+}
