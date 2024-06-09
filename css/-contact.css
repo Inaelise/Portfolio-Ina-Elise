@@ -10,7 +10,7 @@
   margin-bottom: 4rem;
 }
 
-#contact a {
+.contact-link {
   color: #b6aad7;
   background-color: #443f53;
   text-decoration: none;
@@ -18,4 +18,14 @@
   padding: 1rem 1.5rem;
   border-radius: 50px;
   font-weight: 900;
+}
+
+.contact-link:hover {
+  color: #443f53;
+  background-color: #b6aad7;
+  border: 2px solid #443f53;
+}
+
+.icon {
+  color: white;
 }

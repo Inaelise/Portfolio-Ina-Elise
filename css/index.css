@@ -1,6 +1,9 @@
 @import url(-about.css);
 @import url(-projects.css);
 @import url(-contact.css);
+@import url(-header.css);
+
+@import url(-media.css);
 
 *,
 *:before,
@@ -18,34 +21,13 @@ body {
   scroll-behavior: smooth;
 }
 
-nav {
-  position: fixed;
-  z-index: 100;
-  left: 0;
-  right: 0;
-  top: 0;
-  background-color: rgba(255, 255, 255, 0.774);
-}
-
-.nav-list {
-  list-style-type: none;
-  display: flex;
-  justify-content: space-around;
-  padding: 0;
-}
-
-.nav-list a {
-  text-decoration: none;
-  color: inherit;
-  text-transform: capitalize;
-}
-
 .chevron {
   color: white;
   font-size: 2rem;
   display: flex;
   justify-content: center;
   margin-top: 2rem;
+  text-decoration: none;
 }
 
 footer {
@@ -59,7 +41,7 @@ footer {
   letter-spacing: 1px;
 }
 
-.active {
-  border-bottom: 2px solid #b6aad7;
-  font-weight: 600;
+#projects h1,
+#contact h1 {
+  font-size: 2rem;
 }
