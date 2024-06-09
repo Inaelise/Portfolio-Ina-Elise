@@ -27,7 +27,7 @@
   </head>
   <body>
     <header>
-      <nav>
+      <nav class="navbar">
         <ul class="nav-list">
           <li>
             <a
@@ -81,13 +81,48 @@
               with my studies in June 2025.
             </p>
             <p>
-              Skills I have learned so far: HTML, CSS, Tailwind CSS &
+              Skills I've learned so far: Figma, HTML, CSS, Tailwind CSS &
               JavaScript.
             </p>
-            <a class="more-btn" title="Click to read more">read more</a>
+            <button class="more-btn" title="Click to read more">
+              read more
+            </button>
+          </div>
+          <div class="modal" id="modal">
+            <div>
+              <h1>About me</h1>
+              <p>
+                My name is Ina Elise Flom. I'm 28 years old and I live in
+                Bergen, Norway. I'm originally from Tønsberg. I moved in 2017 to
+                study in Bergen.
+              </p>
+              <p>
+                I've got a bachelor's degree in archaeology but over the years I
+                started developing an interest for programming. Therefore I'm
+                getting a higher professional degree in Front-end development at
+                Noroff. My studies will be completed in June 2025.
+              </p>
+              <p>
+                A little bit about my hobbies: I love gaming - it has been a
+                part of my life since I was young. I also enjoy working out at
+                the gym and crocheting.
+              </p>
+            </div>
+            <div class="skills">
+              <p>Skills I've learned so far:</p>
+              <ul>
+                <li>Figma (design)</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Tailwind CSS</li>
+                <li>JavaScript</li>
+              </ul>
+            </div>
           </div>
         </div>
-        <i class="fa-solid fa-chevron-down chevron"></i>
+        <a class="chevron" title="Click to scroll down" href="#projects"
+          ><i class="fa-solid fa-chevron-down"></i
+        ></a>
       </section>
       <section id="projects">
         <h1>Projects</h1>
@@ -96,7 +131,7 @@
             href="https://norofffeu.github.io/html-css-course-assignment-Inaelise/"
             title="Click to go to project page"
           >
-            <article>
+            <div class="article">
               <img src="./images/rainydays.webp" alt="screenshot of website" />
               <div>
                 <h2>rainy days</h2>
@@ -109,13 +144,13 @@
                   chose Rainy Days, a jacket company.
                 </p>
               </div>
-            </article>
+            </div>
           </a>
           <a
             href="https://inaelise.github.io/Semester-project-1/"
             title="Click to go to project page"
           >
-            <article>
+            <div class="article">
               <img
                 src="./images/Bergen-science-museum.webp"
                 alt="screenshot of website"
@@ -136,13 +171,13 @@
                   “childish”.
                 </p>
               </div>
-            </article>
+            </div>
           </a>
           <a
             href="https://norofffeu.github.io/FED1-PE1-Inaelise/"
             title="Click to go to project page"
           >
-            <article>
+            <div class="article">
               <img
                 src="./images/Hotview-labs.webp"
                 alt="screenshot of website"
@@ -162,14 +197,17 @@
                   existing API blogging application.
                 </p>
               </div>
-            </article>
+            </div>
           </a>
         </div>
-        <i class="fa-solid fa-chevron-down chevron"></i>
+        <a class="chevron" title="Click to scroll down" href="#contact"
+          ><i class="fa-solid fa-chevron-down icon"></i
+        ></a>
       </section>
       <section id="contact">
         <h1>Contact</h1>
         <a
+          class="contact-link"
           href="https://www.linkedin.com/in/ina-elise-flom-b55433311/"
           title="Click to go to my LinkedIn page"
           >My LinkedIn</a
