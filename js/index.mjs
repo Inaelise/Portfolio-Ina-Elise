@@ -1,6 +1,5 @@
 const sections = document.querySelectorAll("section");
 const navLinks = document.querySelectorAll(".nav-links");
-/* const chevron = document.querySelectorAll(".chevron"); */
 
 const sectionHandler = (currentSection) => {
   navLinks.forEach((link) => {
@@ -10,11 +9,6 @@ const sectionHandler = (currentSection) => {
     }
     link.classList.remove("active");
   });
-  /* chevron.forEach((btn) => {
-    if (btn.dataset.section === currentSection) {
-      return;
-    }
-  }); */
 };
 
 const sectionCallback = (section) => {
@@ -35,3 +29,26 @@ const getSection = new IntersectionObserver(sectionCallback, sectionOptions);
 sections.forEach((section) => {
   getSection.observe(section);
 });
+
+// modal
+const modal = document.getElementById("modal");
+const btn = document.querySelector(".more-btn");
+
+function toggleModal() {
+  modal.classList.toggle("show");
+}
+
+function showModal() {
+  btn.addEventListener("click", (e) => {
+    e.stopPropagation();
+    toggleModal();
+  });
+
+  document.documentElement.addEventListener("click", (e) => {
+    if (modal.classList.contains("show")) {
+      toggleModal();
+    }
+  });
+}
+
+showModal();
