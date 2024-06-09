@@ -42,6 +42,7 @@
 
   .about-container {
     flex-direction: row;
+    margin-bottom: 7rem;
   }
 
   .img-background {
@@ -66,10 +67,6 @@
     left: 120px;
     z-index: -1;
     display: block;
-  }
-
-  .chevron {
-    padding-top: 3rem;
   }
 
   .modal {
@@ -116,8 +113,8 @@
     left: 150px;
   }
 
-  #about .chevron {
-    padding-top: 10rem;
+  #about .chevron-container {
+    margin-top: 13rem;
   }
 
   /* Projects */

@@ -24,10 +24,14 @@ body {
 .chevron {
   color: white;
   font-size: 2rem;
-  display: flex;
-  justify-content: center;
-  margin-top: 2rem;
   text-decoration: none;
+  display: inline;
+}
+
+.chevron-container {
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 7rem;
 }
 
 footer {
