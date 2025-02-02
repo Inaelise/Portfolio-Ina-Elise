@@ -76,6 +76,7 @@
   height: 40px;
   margin: auto;
   cursor: pointer;
+  transition: all 0.3s ease-in-out;
 }
 
 .more-btn:hover {
@@ -85,9 +86,10 @@
 
 .modal {
   position: absolute;
+  top: 4rem;
   background-color: #b6aad7;
   max-width: 400px;
-  padding: 0 0.5rem;
+  padding: 0 1rem;
   letter-spacing: 0.5px;
   border: 1px solid white;
   border-radius: 20px;
@@ -106,6 +108,12 @@
   visibility: visible;
   filter: blur(0);
   transform: scale(1);
+}
+
+.skills-container {
+  display: flex;
+  justify-content: center;
+  gap: 6rem;
 }
 
 .skills {
