@@ -43,6 +43,20 @@ document.querySelectorAll(".smooth-scroll").forEach((a) => {
   });
 });
 
+document.querySelectorAll(".nav-links").forEach((link) => {
+  link.addEventListener("click", function (e) {
+    e.preventDefault();
+
+    const targetSection = document.querySelector(this.getAttribute("href"));
+    if (!targetSection) return;
+
+    window.scrollTo({
+      top: targetSection.offsetTop - 50, // Adjust for navbar height if needed
+      behavior: "smooth",
+    });
+  });
+});
+
 // modal
 const modal = document.getElementById("modal");
 const btn = document.querySelector(".more-btn");
