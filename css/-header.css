@@ -18,10 +18,11 @@
   text-decoration: none;
   color: inherit;
   text-transform: capitalize;
+  transition: all 0.2s ease-in-out;
 }
 
 .active {
   border-bottom: 2px solid #b6aad7;
-  transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in-out;
   font-weight: 600;
 }
