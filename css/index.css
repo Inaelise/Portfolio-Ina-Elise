@@ -15,6 +15,7 @@ body {
   box-sizing: border-box;
   min-height: 100vh;
   margin: 0;
+  margin-top: 1rem;
   display: block;
   font-family: "Raleway", sans-serif;
   background-color: #abb0b5;
@@ -25,13 +26,17 @@ body {
   color: white;
   font-size: 2rem;
   text-decoration: none;
-  display: inline;
+  transition: all 0.2s ease-in-out;
+}
+
+.chevron:hover {
+  transform: scale(1.2);
 }
 
 .chevron-container {
-  text-align: center;
   margin-top: 3rem;
-  margin-bottom: 7rem;
+  display: flex;
+  justify-content: center;
 }
 
 footer {
@@ -48,4 +53,5 @@ footer {
 #projects h1,
 #contact h1 {
   font-size: 2rem;
+  padding-bottom: 1.5rem;
 }
