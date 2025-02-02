@@ -22,7 +22,7 @@ const sectionCallback = (section) => {
 };
 
 const sectionOptions = {
-  threshold: 0.5,
+  threshold: 0.3,
 };
 
 const getSection = new IntersectionObserver(sectionCallback, sectionOptions);
