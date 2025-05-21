@@ -22,7 +22,7 @@ const sectionCallback = (section) => {
 };
 
 const sectionOptions = {
-  threshold: 0.3,
+  threshold: 0.2,
 };
 
 const getSection = new IntersectionObserver(sectionCallback, sectionOptions);
@@ -51,7 +51,7 @@ document.querySelectorAll(".nav-links").forEach((link) => {
     if (!targetSection) return;
 
     window.scrollTo({
-      top: targetSection.offsetTop - 50, // Adjust for navbar height if needed
+      top: targetSection.offsetTop - 50,
       behavior: "smooth",
     });
   });
