@@ -59,6 +59,7 @@
 
 .about-content p {
   margin: 0;
+  line-height: 1.5rem;
 }
 
 .background {
@@ -91,11 +92,12 @@
   max-width: 400px;
   padding: 0 1rem;
   letter-spacing: 0.5px;
+  line-height: 1.5rem;
   border: 1px solid white;
   border-radius: 20px;
   opacity: 0;
   visibility: hidden;
-  transition: 0.5s ease-out;
+  transition: 0.3s ease-out;
   filter: blur(4px);
   transform: scale(0.33);
 }
@@ -122,4 +124,10 @@
 
 .skills p {
   font-weight: 600;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
 }
